@@ -1,0 +1,15 @@
+body{
+    background-image: url(/images/background-image/bao-menglong-99080HNVoVs-unsplash.jpg);
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+#display{
+    /* display: none; */
+    visibility: hidden; 
+}
+li{
+    display: inline;
+    margin: 20px;
+}
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon/images.jpeg" type="image/x-icon">
+    <title>Practice Task 4</title>
+    <style>
+        nav > ul{
+            display: flex;
+        }
+        nav li{
+            list-style: none;
+            margin-right: 10px;
+            padding: 5px;
+        }
+        nav li a{
+            text-decoration: none;
+            color: cadetblue;
+        }
+        nav li:hover{
+            background-color: gray;
+        }
+        nav li a:hover{
+            color:bisque
+        }
+        nav li .dropdown{
+            display: none;
+            position: absolute;
+            background-color:darkgrey;
+            padding-left: 10px;
+        }
+        nav li:hover > .dropdown{
+            display: block;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="practice.html">Practice</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                            <ul class="dropdown">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="practice.html">Practice</a></li>
+                                <li><a href="media.html">Media</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="form.html">Form</a></li>
+                                <li><a href="table.html">Table</a></li>
+                                <li><a href="module4.html">Home Work</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="module4.html">Home Work</a></li>
+                    </ul>
+                </li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="module4.html">Home Work</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <hr>
+        
+        <section>
+            <form>
+            <label for=""> Search your Image here:
+                <input type="search" name="" id="" placeholder="write here"><button>Search</button>
+            </label>
+        
+        <figure>
+            <img src="images/Kung Fu Panda/KFP3-promo-po4.webp" height="300px" alt="Kung Fu Panda image">
+            <figcaption><a href="https://www.microsoft.com/sv-se/p/kung-fu-panda-2/8d6kgwzl58p1?activetab=pivot%3aoverviewtab">For more click here</a></figcaption>
+        </figure>
+        <hr>
+    
+            <h2>Feedback Form</h2>
+            <label for="name">Name: <br>
+                <input type="text" name="" id="name">
+            </label>
+                <br>
+            <label for="Date"> Date: <br>
+                <input type="date" name="" id="Date">
+            </label>
+            <h2>Comment:</h2>
+                <textarea name="" id="" cols="120" rows="10"></textarea>
+                <br>
+                
+                <select name="" id="">
+                    <option value="Good">Good</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Bad">Bad</option>
+                </select>
+                <label for="">
+                    <input type="submit" value="Submit">
+                </label> 
+        </form>
+    </section>
+    </main>
+</body>
+</html>

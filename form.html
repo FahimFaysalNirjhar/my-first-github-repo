@@ -1,0 +1,168 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/images/favicon/icons8-form-100.png" type="image/x-icon">
+
+    <title>Html Form Practice</title>
+
+    <style>
+        label{
+            display: block;
+            margin-bottom: 20px;
+        }
+        nav > ul{
+            display: flex;
+        }
+        nav li{
+            list-style: none;
+            margin-right: 10px;
+            padding: 5px;
+
+        }
+        nav li a{
+            text-decoration: none;
+            color: black;
+        }
+        nav li:hover{
+            background-color: gray;
+        }
+        nav li a:hover{
+            color: blanchedalmond;
+        }
+        nav li .dropdown{
+            display: none;
+            position: absolute;
+            background-color: bisque;
+            padding-left: 10px;
+        }
+        nav li:hover > .dropdown{
+            display: block;
+        }
+    </style>
+ </head>
+ <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="practice.html">Practice</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="index.html">Home</a>
+                            <ul class="dropdown">
+                                <li><a href="index.html">Home</a></li>
+                                <li>
+                                    <a href="practice.html">Practice</a>
+                                    <ul class="dropdown">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="practice.html">Practice</a></li>
+                                        <li>
+                                            <a href="media.html">Media</a>
+                                            <ul class="dropdown">
+                                                <li><a href="index.html">Home</a></li>
+                                                <li><a href="practice.html">Practice</a></li>
+                                                <li><a href="media.html">Media</a></li>
+                                                <li>
+                                                    <a href="blog.html">Blog</a>
+                                                    <ul class="dropdown">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="practice.html">Practice</a></li>
+                                <li><a href="media.html">Media</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="form.html">Form</a></li>
+                                <li><a href="table.html">Table</a></li>
+                            </ul>    
+                                                </li>
+                                                <li><a href="form.html">Form</a></li>
+                                                <li><a href="table.html">Table</a></li>
+                                            </ul>    
+                                        </li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="form.html">Form</a></li>
+                                        <li><a href="table.html">Table</a></li>
+                                    </ul>    
+                                </li>
+                                <li><a href="media.html">Media</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="form.html">Form</a></li>
+                                <li><a href="table.html">Table</a></li>
+                            </ul>    
+                        </li>
+                        <li><a href="practice.html">Practice</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="table.html">Table</a></li>
+                    </ul>
+                </li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="table.html">Table</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <main>
+        <section>
+            <h2>
+                Please fill up this form
+            </h2>
+
+            <form>
+                <fieldset>
+                    <legend>Personal info</legend>
+                    <label for="name"> Your Name:
+                        <input type="text" name="" id="name" placeholder="write name here">
+                    </label>
+                    <label for="email"> Email Address:
+                        <input type="email" name="" id="email" placeholder="mail address">
+                    </label>
+                    <label for="Phonenumber"> Phone number:
+                        <input type="tel" name="" id="Phonenumber">
+                    </label>
+                    <label for=""> Create password:
+                        <input type="password" name="" id="">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Pick One Item</legend>
+                    <label for="Chicken Chap">
+                        <input type="radio" name="snacks" id="Chicken Chap"> Chicken Chap
+                    </label>
+                    <label for="Chinese">
+                        <input type="radio" name="snacks" id="Chinese"> Chinese
+                    </label>
+                    <label for="Pitha">
+                        <input type="radio" name="snacks" id="Pitha"> Pitha
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Choose One Or More Chatni</legend>
+                    <label for="Sutki Vorta">
+                        <input type="checkbox" name="Chatni" id="Sutki Vorta">Sutki Vorta
+                    </label>
+                    <label for="Mionis">
+                        <input type="checkbox" name="Chatni" id="Mionis">Mionis
+                    </label>
+                    <label for="Chili sauce">
+                        <input type="checkbox" name="Chatni" id="Chili sauce">Chili sauce
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Special instruction</legend>
+                    <textarea name="" id="" cols="70" rows="10" placeholder="Enter text here..." wrap="on"></textarea>
+                </fieldset>
+                <input type="file" name="" id="bkash">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+ </body>
+ </html>
